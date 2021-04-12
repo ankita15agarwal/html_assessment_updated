@@ -1,0 +1,81 @@
+body{
+    background-image: url("image/anku.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
+}
+nav{
+    background:#f1f1f1;
+    height:80px;
+    margin: 40px;
+    opacity: .5;
+}
+label.logo{
+    color:black;
+    font-size:35px;
+    padding:25px;
+    letter-spacing: 3px;
+    line-height: 80px;    
+}
+
+
+nav ul{
+    float:right;
+    margin-right:55px;
+}
+nav ul li{
+    display:inline-block;
+    line-height:50px;
+    margin:0 30px;
+    font-size: 20px;
+    color:#000000;
+}
+nav ul li:hover{
+    background-color: white;
+    
+}
+
+  .flex-image-container{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 15px;
+    margin-left: 60px;
+  
+ 
+}
+ 
+  .flex-image-container > div {
+      
+    width: 400px;
+    padding: 50px;
+    height: 400px;
+    margin-top: 20px;
+    
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    text-align:left;
+    margin-left: 110px;
+ 
+  }
+
+#img{
+    height:300px;
+    width:380px;
+}
+#comment{
+    height:200px;
+    width:395px;
+    
+}
+  
+.flex-icon-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .flex-icon-container > img {
+      width: 30px;
+      height: 30px;
+      padding: 20px;
+ 
+  }
