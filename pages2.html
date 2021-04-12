@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/ag.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#isubmit').click(function(){
+                    var name = $('#fname').val();
+                    var email = $('#femail').val();
+                    var comment =$('#comment').val();
+                    if(name==''||name==null||email==''||email==null||comment==''||comment==null){
+                        alert("All fields are mandatory");
+                        return false;
+                    }
+                    if(email.indexOf('@')==0)
+                    {
+                        alert("Invalid email address");
+                        return false;
+                    }    
+                    if ((email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.'))
+                    {
+                        alert("Invalid Email address");
+                        return false;
+                    }
+                })
+            })
+            
+            $(function(){
+                var iArray=new Array();
+                iArray[0]="image/b1.jpeg";
+                iArray[1]="image/b3.jpeg";
+                iArray[2]="image/b4.jpeg";
+                iArray[3]="image/b5.jpeg";
+    
+                var thisId=0;
+                window.setInterval(function(){
+                    $('#img').attr('src',iArray[thisId]);
+                    thisId++; 
+                    if (thisId==3) 
+                    {
+                        thisId=0;
+                    } 
+                },2500);        
+            });
+            
+            
+            
+            
+        </script>
+    </head>
+<body>
+    <header>
+        <nav>
+     <label class="logo">UPPER</label>
+     <ul>
+         <li>Home</li>
+         <li>First Gallery</li>
+         <li>Second</li>
+         <li>Third Grid</li>
+         <li>About us</li>
+         <li>Contact</li>
+     </ul>
+ </nav>
+        </header>
+        <div class="flex-image-container">
+            <div style="background-color:white;opacity: 0.7;"><h2>Contact Us</h2><p> Praesent tempus dapibus odio nec elementum.Sed elementum est quis tortor faucibus,et molestile nibh finibus.Mauris condimentum ex vestibulum fringilla consectetur.</p>
+                
+                    <form name="contactform"  onsubmit="return validate()">
+<input type="text"class="form-contol required"  data-validation="length" data-validation-length="min 2"
+       id="fname" name="iName" placeholder="Name" style="margin-top: 5px; margin-bottom: 5px; box-sizing: border-box; width: 100%; height: 10%;"><br/>
+<input type="text" class="form-contol required" data-validation="email required"  id="femail" name="iEmail" placeholder="Email" style="margin-top: 5px; margin-bottom: 5px; box-sizing: border-box; width: 100%; height: 10%;"><br/>
+<textarea placeholder="Your Message" class="form-contol required" id="comment" data-validation = "required" name="icomment" style="width: 100%; height: 40%;"></textarea>
+<input id="isubmit" type="submit" value="Submit" style="color:aliceblue; background-color: blue; margin-left: 85%; margin-top: 5px; font-size: 15px;">
+</form>
+             </div>
+            <div style="background-color: white;opacity: 0.7;"> <h2> 123 New Sreet 11000, San Francisco,CA </h2>
+           
+            <img src="image/m1.jpeg" id="img">
+        </div>
+    </div>
+    
+    <footer class = "flex-icon-container">
+            <img src= "image/fb.png" />
+            <img src= "image/tw.png" />
+            <img src= "image/gmail.png" />
+            <img src= "image/in.png" />
+             <img src= "image/be.png" />
+            
+            
+ 
+        </footer>
+    
+    
+   
+    </body>
+</html>
