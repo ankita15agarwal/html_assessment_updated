@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script >
+              let a;
+              let date;
+              let time;
+              setInterval(()=>{
+                  
+            
+               var a=new Date();
+              time = a.getHours()+":"+a.getMinutes()+":"+a.getSeconds();
+                  document.getElementById("time").innerHTML= time;
+              },1000);
+        
+         </script>
+    
+    </head>
+    <body>
+        
+      <header>
+          
+        <nav>
+            <P id="time"> </P>
+            
+     
+     <label class="logo">UPPER</label>
+     <ul>
+         <li>Home</li>
+         <li>First Gallery</li>
+         <li>Second</li>
+         <li>Third Grid</li>
+         <li>About us</li>
+         <li>Contact</li>
+     </ul>
+ </nav>
+        </header>
+        <h1>First Image Gallery</h1>
+        <p>Curabitur quis tellus sed orci rhoncus fermentum. Ptaesent sollicitudin scelerisque nunc <br /> et vehicula. sed ex magna, elementum ut volutpat ut, vehicula quis metus</p>
+ 
+        <div class="image">
+            <div id="first" style="background-image: url(image/b1.jpeg);"><h1>First Image</h1> </div>
+            <div id="second" style="background-image: url(image/b2.jpeg);"> <h1>Second Image</h1></div>
+            <div style="background-image: url(image/b3.jpeg);"><h1>Third Image</h1> </div>
+            <div style="background-image: url(image/b4.jpeg);"><h1>Fourth Image</h1> </div>
+        </div>
+        
+        
+        <div class = "icon">
+            <img src= "image/fb.png" />
+            <img src= "image/tw.png" />
+            <img src= "image/gmail.png" />
+            <img src= "image/in.png" />
+             <img src= "image/be.png" />
+            
+            
+ 
+        </div>
+        <footer class="footer">
+    
+        <h2> 
+        Copyright c 2016 your company.Design:Templatemo </h2>
+        </footer>
+    </body>
+
+</html>
