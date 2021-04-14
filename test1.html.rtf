@@ -1,0 +1,251 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15100\viewh14840\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 Question 1: \
+
+\fs36 <html>\
+    <head>\
+        <title>sum of array elements</title>\
+        <script>\
+            function arraySum(arr)\{\
+                var sum=0;\
+                for(var i=0;i<arr.length;i++)\
+                \{\
+                    sum+=arr[i];\
+                \}\
+                return sum;\
+            \}\
+        </script>\
+    </head>\
+    <body>\
+        <script>\
+            var res;\
+            var arr1=[1,2,3,4,5];\
+            var arr2=[5,10,15,20,25];\
+            res=arraySum(arr1)+arraySum(arr2);\
+            document.write(res);\
+        </script>\
+    </body>\
+</html>\
+\
+
+\fs48 Question 2:\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <html>\
+<head>\
+<body>\
+<script type = "text/javascript">\
+var even =0,n;\
+n = prompt("enter any number");\
+while (even<n)\
+\{\
+even=even+2;\
+document.write(even+"<br>");\
+\}\
+</script> \
+</body>\
+</head>\
+</html>\
+
+\fs28 \
+
+\fs48 Question 3:\
+
+\fs36 <html>\
+<head>\
+  <script>\
+    function reverseArr(input) \{\
+        var ret = [];\
+        for(var i = input.length-1; i >= 0; i--) \{\
+            ret.push(input[i]);\
+        \}\
+        document.write(ret);\
+        \
+    \}\
+  </script>\
+</head>\
+<body>\
+  <script>\
+    var a = [3,5,7,8,5,9,4,7,3]\
+    var b = reverseArr(a);\
+    \
+  </script>\
+</body>\
+</html>\
+\
+
+\fs48 Question 4 :\
+
+\fs36 <html>\
+    <head>\
+         <script>\
+            function arraySum(arr1,arr2)\{\
+                var res=[];\
+                for(var i=0;i<arr1.length;i++)\
+                \{\
+                    res[i]=arr1[i]+arr2[i];\
+                \}\
+                return res;\
+            \}\
+        </script>\
+    </head>\
+    <body>\
+        <script>\
+            var res;\
+            var arr1=[1,2,3,4,5];\
+            var arr2=[5,10,15,20,25];\
+            res=arraySum(arr1,arr2);\
+            document.write(res);\
+        </script>\
+    </body>\
+</html>\
+\
+
+\fs48 Question 5:\
+
+\fs36 <html>\
+    <head>\
+        <title>replacing every second character of string</title>\
+    </head>\
+    <body>\
+        <script>\
+            var str = prompt("enter a string:");\
+            str=str.split('');\
+            for (var i = 0; i <str.length; i++) \{\
+                if(i%2!=0)\
+                \{\
+                    str[i] = "Z";\
+                \}\
+            \}\
+            document.write(str.join(""));\
+        </script>\
+    </body>\
+</html>\
+
+\fs48 Question 6:\
+
+\fs36 <html>\
+    \
+    <body>\
+        <script>\
+            function checkString(str) \{\
+                const len = str.length;\
+ \
+                for (let i = 0; i < len; i++) \{\
+                    if (str[i]=='y') \{\
+                        return 'yes';\
+                    \}\
+                \}\
+                return 'no';\
+            \}\
+            const string = prompt('Enter a string: ');\
+            const value = checkString(string);\
+            document.write(value);\
+        </script>\
+    </body>\
+</html>\
+\
+
+\fs48 Question 7:\
+
+\fs36 <html>\
+<head>\
+    </head>\
+    <body>\
+    <script type ="text/javascript">\
+    var n,fact=1,n1;\
+        n1=n;\
+        n=prompt("enter any number")\
+        while (n>=1)\
+            \{\
+                fact=fact*n;\
+                n=n-1;\
+            \}\
+    alert ("factorial of given number is "+ fact);\
+        </script>\
+    </body>\
+</html>\
+ \
+
+\fs48 Question 8 :\
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf2 <html>\
+<head>\
+<title>guessing a four digit pin</title>\
+</head>\
+<body>\
+<script>\
+const p=1597;\
+var pin=prompt("please make your guess:");\
+for(var i=1;i<=3;i++)\
+\{\
+if(p==pin)\
+\{\
+document.write("That was correct!"+"<br>");\
+break;\
+\}\
+else\
+\{\
+alert("Sorry that was wrong.");\
+prompt("please make your guess:");\
+\}\
+\}\
+</script>\
+</body>\
+</html>\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+
+\fs48 Question 9:\
+
+\fs36 <html>\
+    <head>\
+        \
+    </head>\
+    <body>\
+        <script>\
+            function Palindrome(str) \{\
+                const len = string.length;\
+ \
+                for (let i = 0; i < len / 2; i++) \{\
+                    if (string[i] !== string[len - 1 - i]) \{\
+                        return 'No';\
+                    \}\
+                \}\
+                return 'Yes';\
+            \}\
+            const string = prompt('Enter a string: ');\
+            const value = Palindrome(string);\
+            document.write(value);\
+        </script>\
+    </body>\
+</html>\
+\
+
+\fs48 Question 10:\
+
+\fs36 <html>\
+<head>\
+    \
+</head>\
+    <body>\
+        <script type ="text/javascript">\
+            var n, total=0;\
+            n=prompt("enter any number")\
+            for(var i=1;i<=n;i++)\
+            \{\
+                total=total+i;\
+            \}\
+            alert ("sum upto n is "+ total);\
+        </script>\
+    </body>\
+</html>\
+}
